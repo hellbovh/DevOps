@@ -8,6 +8,8 @@ services:
     container_name: backend
     volumes:
       - backend_data:/app/data
+    ports:
+      - "5000:5000"
     networks:
       - app-network
     restart: unless-stopped
